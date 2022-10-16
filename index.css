@@ -3,7 +3,7 @@
 :root {
 
     --colorhover: rgb(0, 255, 170);
-    --colorLetrasTrabajoEstudy:rgb(0, 0, 0); 
+    --colorLetrasTrabajoEstudy: rgb(0, 0, 0);
 }
 
 * {
@@ -25,7 +25,7 @@
 *::selection {
 
     background-color: rgba(0, 0, 0, .8);
-    
+
     color: turquoise;
 
 }
@@ -223,6 +223,9 @@
     align-items: center;
     font-size: 2em;
 }
+.parrafo p{
+    text-align: center;
+}
 
 .hi {
     letter-spacing: .5em;
@@ -283,34 +286,38 @@
         transform: translateY(-0px);
     }
 }
+
 /* botom descargar cv */
-.parrafo .buttom{
-   background:  turquoise ;
-   color: rgb(24, 30, 36);
-   display: inline-block;
-   font-size: .7em;
-   padding: .8rem 1.8rem;
-   border-radius: 3rem;
-   min-width: 200px;
-   text-decoration: none;
-   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.527) ;
-   animation: pulse 1.5s infinite;
+.parrafo .buttom {
+    background: turquoise;
+    color: rgb(24, 30, 36);
+    display: inline-block;
+    font-size: .7em;
+    padding: .8rem 1.8rem;
+    border-radius: 3rem;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.527);
+    animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
-    0%{
+    0% {
         transform: scale(.99);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
     }
-    70%{
+
+    70% {
         transform: scale(1);
         box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
     }
-    100%{
+
+    100% {
         transform: scale(.99);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
     }
 }
+
 /*  acerca de  parrafo*/
 .contenedorAcercaDE {
 
@@ -411,22 +418,26 @@
 }
 
 .estudios1,
-.estudios2, .estudios3 {
+.estudios2,
+.estudios3 {
     display: flex;
     padding: 50px;
 
 }
-.estudios2{
+
+.estudios2 {
     position: relative;
     top: -50px;
 }
-.estudios3{
+
+.estudios3 {
     position: relative;
     top: -90px;
 }
 
 .estudios1 img,
-.estudios2 img, .estudios3 img {
+.estudios2 img,
+.estudios3 img {
     height: 120px;
     border-radius: 5%;
 }
@@ -470,21 +481,21 @@
 .filados {
     font-size: 1.5em;
     color: var(--colorLetrasTrabajoEstudy);
-   
+
 }
 
 /* hard skills */
 .skills-hard {
     position: relative;
     z-index: -2;
-    
     background-image: radial-gradient(circle, #0031b8, #0300caad, #00015093, #030099, #020060c2, #020065a9, #010db8b6, #0c016f8e, rgb(13, 9, 78), rgb(13, 9, 78), rgb(13, 9, 78), rgb(13, 9, 78));
     height: 120vh;
     color: var(--colorLetrasTrabajoEstudy);
     padding-top: 70px;
 
 }
-.filahard{
+
+.filahard {
     position: relative;
     top: -100px;
 }
@@ -504,7 +515,7 @@
 
 .conteneHtml p {
     position: relative;
-   
+
     top: -140px;
 }
 
@@ -528,7 +539,7 @@
 
 .contenecss p {
     position: relative;
-   
+
     top: -170px;
 }
 
@@ -549,7 +560,7 @@
 
 .contenesprin p {
     position: relative;
-   
+
     top: -135px;
 }
 
@@ -568,7 +579,7 @@
 
 .contenejs p {
     position: relative;
-  
+
     top: -150px;
 }
 
@@ -579,7 +590,7 @@
     width: 83px;
     height: 160px;
     z-index: -1;
-    
+
 
     background: red;
     animation: animate 2s ease-in-out infinite;
@@ -587,7 +598,7 @@
 
 .conteneangu p {
     position: relative;
-   
+
     top: -145px;
 }
 
@@ -607,7 +618,7 @@
 
 .contenemsql p {
     position: relative;
-   
+
     top: -155px;
 }
 
@@ -645,9 +656,10 @@
 
 .conteneboos p {
     position: relative;
-    
+
     top: -165px;
 }
+
 /*  efecto agua */
 
 @keyframes animate {
@@ -661,37 +673,43 @@
         clip-path: polygon(0 51%, 6% 60%, 14% 68%, 29% 71%, 47% 63%, 57% 54%, 68% 51%, 81% 51%, 94% 58%, 100% 66%, 100% 100%, 0 100%);
     }
 }
+
 /* proyectos */
 
-.contieneProyectos{
+.contieneProyectos {
     width: 100vw;
     height: 140vh;
     /* background: yellowgreen; */
-    
+
     background-image: radial-gradient(circle, yellowgreen, #0300caad, #00015093, yellowgreen, #020060c2, #020065a9, yellowgreen, #0c016f8e, rgb(13, 9, 78), rgb(13, 9, 78), rgb(13, 9, 78), rgb(13, 9, 78));
 }
-.tituloProyectos h4{
+
+.tituloProyectos h4 {
     font-size: 3em;
-  
+    color: var(--colorLetrasTrabajoEstudy);
+
 }
-.cajaProyectos{
-  
+
+.cajaProyectos {
+
     width: 250px;
     height: 200px;
     margin: 35px auto 25px auto;
     transition: all 0.4s;
 }
-.cajaProyectos img{
+
+.cajaProyectos img {
     width: 250px;
     height: 200px;
-    
+
 }
-.cajaProyectos:hover{
-   
-   
+
+.cajaProyectos:hover {
+
+
     transform: scale(1.4);
-  
-    
+
+
 }
 
 
@@ -710,62 +728,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px) {
-
-    .html, .css, .sprin, .js, .msql, .angu, .git, .boostrap {
-
-        left: 70px;
-
-    }
-    .angu {        
-        left: 60px;
-        width: 90px;
-        height: 160px;
-        border-radius: 10px;
-        
-    }
-  
-    .js, .msql {
-
-        left: 65px;
-
-    }
-     .msql {
-
-        left: 48px;
-
-    }
-}
-
-@media screen and (max-width: 991px) {
-
-    .html, .css, .sprin, .js, .msql, .angu, .git, .boostrap {
-
-        left: 40px;
-
-    }
-    
-    .js, .msql {
-
-        left: 36px;
-
-    }
-     .msql {
-
-        left: 18px;
-
-    }
-}
 
 
 
@@ -774,4 +736,219 @@
 
 
 /* respnsive desing */
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1500px) {
+
+
+
+    /* soft skills */
+    .skills-soft {
+        height: 110vh;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    /* soft skills */
+    .skills-soft {
+        height: 100vh;
+        padding-top: 20px;
+    }
+
+    /* hard skills */
+    .skills-hard {
+        background: rgba(255, 17, 0, 0.411);
+
+    }
+
+    .html,
+    .css,
+    .sprin,
+    .js,
+    .msql,
+    .angu,
+    .git,
+    .boostrap {
+
+        left: 70px;
+    }
+    .git{
+        left: 65px;
+    }
+    .angu {
+        left: 60px;
+        width: 90px;
+        height: 160px;
+        border-radius: 10px;
+
+    }
+
+    .js{
+
+        left: 66px;
+
+    }
+
+    .msql {
+
+        left: 48px;
+
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+
+    /* soft skills */
+    .skills-soft {
+        height: 100vh;
+        padding-top: 20px;
+    }
+
+    .titulo-soft {
+        font-size: 2em;
+        margin-bottom: 2%;
+
+    }
+
+    /* hard skills */
+    .skills-hard {
+        background: rgba(0, 255, 242, 0.562);
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+
+    /* soft skills */
+    .skills-soft {
+        height: 150vh;
+
+    }
+
+    .titulo-soft {
+        font-size: 2em;
+        margin-bottom: 2%;
+
+    }
+
+    /* hard skills */
+    .skills-hard {
+        background: rgba(0, 255, 13, 0.308);
+        height: 210vh;
+    }
+
+    .html,
+    .css,
+    .sprin,
+    .js,
+    .msql,
+    .git,
+    .boostrap {
+
+        left: 130px;
+
+    }
+    .angu{
+        left: 125px;
+    }
+    .js {
+
+        left: 125px;
+
+    }
+
+    .msql {
+
+        left: 110px;
+
+    }
+
+}
+@media screen and (max-width: 768px) {
+     /* nav lateral */
+     .contenedor-navLateral {
+        width: 100vh;
+        height: 50px;
+        position: relative;
+        z-index: 100;
+        top: 80px;
+    margin: auto;
+    }
+    .navLateral {
+        display: flex;
+        flex-direction:row;
+    
+    }
+/* hard skills */
+.skills-hard {
+    background: rgba(255, 251, 0, 0.397);
+    height: 220vh;
+}
+.html,
+.css,
+.sprin,
+.js,
+.msql,
+.git,
+.boostrap {
+
+    left: 85px;
+
+}
+.angu, .js{
+    left: 80px;
+}
+
+.msql {
+
+    left: 60px;
+
+}
+
+}
+
+@media screen and (max-width: 576px) {
+
+    /* nav lateral */
+    .contenedor-navLateral {
+     display: none;
+    }
+    /* soft skills */
+    .skills-soft {
+        height: 260vh;
+
+    }
+
+    /* hard skills */
+    .skills-hard {
+        background: rgba(255, 0, 170, 0.377);
+        height: 240vh;
+    }
+    .html,
+    .css,
+    .sprin,
+    .js,
+    .msql,
+    .git,
+    .boostrap {
+    
+      opacity: 0;
+       
+    
+    }
+    .angu, .js{
+        opacity: 0;
+    }
+    
+    .msql {
+        opacity: 0;
+    }
+
+}
