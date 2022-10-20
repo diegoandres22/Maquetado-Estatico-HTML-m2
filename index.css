@@ -157,25 +157,25 @@
 
 .hechizos {
     position: relative;
-    width: 85vw;
-    height: 80vh;
-    margin: auto auto auto 23%;
+    width: 80vw;
+    height: 70vh;
+    margin: auto auto auto 25%;
     display: flex;
 
 
 }
 
 .hechizo1 {
-    width: 340px;
-    height: 340px;
-    margin: auto auto 15px auto;
+    width: 320px;
+    height: 320px;
+    margin: auto auto 20px auto;
     opacity: .9;
 
 }
 
 .hechizo2 {
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
     margin: auto auto 75px auto;
     opacity: .9;
 
@@ -207,7 +207,7 @@
 
     position: absolute;
     top: 180px;
-    left: 1%;
+    left: 5%;
     width: 50%;
     height: 70%;
     color: aliceblue;
@@ -223,7 +223,8 @@
     align-items: center;
     font-size: 2em;
 }
-.parrafo p{
+
+.parrafo p {
     text-align: center;
 }
 
@@ -304,17 +305,17 @@
 @keyframes pulse {
     0% {
         transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.295);
     }
 
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
     }
 
     100% {
         transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.205);
     }
 }
 
@@ -343,7 +344,8 @@
 
 .col-10 {
     padding-top: 140px;
-    line-height: 1.7em;
+    line-height: 1.5em;
+    font-size: 1.2em;
 }
 
 /* experiencias laborales */
@@ -374,6 +376,7 @@
     display: flex;
     padding: 50px;
 
+
 }
 
 .experiencias1 img,
@@ -386,6 +389,7 @@
 .experienciasP2 {
     margin-left: 20px;
     margin-right: 40px;
+    font-size: 1em;
 }
 
 .titu-fecha,
@@ -421,7 +425,8 @@
 .estudios2,
 .estudios3 {
     display: flex;
-    padding: 50px;
+    font-size: 1em;
+    margin: 5% auto;
 
 }
 
@@ -724,11 +729,62 @@
 
 
 
+/* respnsive desing 
+@media screen and (max-width: 1930px) {*/
 
+/* hechizos 
 
+.hechizos {
+    width: 70vw;
+    height: 60vh;
+    margin: auto auto auto 28%;
+}
+.hechizo1 {
+    width: 450px;
+    height: 450px;
+    margin: auto auto 15px auto;
+}
+.hechizo2 {
+    width: 300px;
+    height: 300px;
+    margin: auto auto 75px auto;
+}
+ hard skills 
 
+.html,
+.css,
+.sprin,
+.js,
+.msql,
+.angu,
+.git,
+.boostrap {
 
+    left: 117px;
+}
+.git{
+    left: 102px;
+}
+.angu {
+    left: 102px;
+    width: 90px;
+    height: 160px;
+    border-radius: 10px;
 
+}
+
+.js{
+
+    left: 110px;
+
+}
+
+.msql {
+
+    left: 90px;
+
+}
+} */
 
 
 
@@ -736,14 +792,47 @@
 
 
 /* respnsive desing */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1441px) {
 
+    /* estudios */
 
+    .contenedor-estudios {
+        height: 135vh;
+    }
 
     /* soft skills */
     .skills-soft {
         height: 110vh;
 
+    }
+
+    /* hard skills */
+    .html,
+    .css,
+    .sprin,
+    .js,
+    .msql,
+    .angu,
+    .git,
+    .boostrap {
+        left: 116px;
+    }
+
+    .git {
+        left: 110px;
+    }
+
+    .angu {
+        left: 110px;
+
+    }
+
+    .js {
+        left: 111px;
+    }
+
+    .msql {
+        left: 91px;
     }
 
 
@@ -759,11 +848,10 @@
     }
 
     /* hard skills */
+
     .skills-hard {
-        background: rgba(255, 17, 0, 0.411);
-
-    }
-
+        height: 135vh;}
+        
     .html,
     .css,
     .sprin,
@@ -775,9 +863,11 @@
 
         left: 70px;
     }
-    .git{
+
+    .git {
         left: 65px;
     }
+
     .angu {
         left: 60px;
         width: 90px;
@@ -786,7 +876,7 @@
 
     }
 
-    .js{
+    .js {
 
         left: 66px;
 
@@ -802,12 +892,11 @@
 
 @media screen and (max-width: 1000px) {
 
-
-
     /* soft skills */
     .skills-soft {
-        height: 100vh;
         padding-top: 20px;
+        height: 200vh;
+      
     }
 
     .titulo-soft {
@@ -818,7 +907,7 @@
 
     /* hard skills */
     .skills-hard {
-        background: rgba(0, 255, 242, 0.562);
+       
         height: 100vh;
     }
 }
@@ -840,7 +929,7 @@
 
     /* hard skills */
     .skills-hard {
-        background: rgba(0, 255, 13, 0.308);
+
         height: 210vh;
     }
 
@@ -855,9 +944,11 @@
         left: 130px;
 
     }
-    .angu{
+
+    .angu {
         left: 125px;
     }
+
     .js {
 
         left: 125px;
@@ -871,46 +962,53 @@
     }
 
 }
+
 @media screen and (max-width: 768px) {
-     /* nav lateral */
-     .contenedor-navLateral {
+
+    /* nav lateral */
+    .contenedor-navLateral {
         width: 100vh;
         height: 50px;
         position: relative;
         z-index: 100;
         top: 80px;
-    margin: auto;
+        margin: auto;
     }
+
     .navLateral {
         display: flex;
-        flex-direction:row;
-    
+        flex-direction: row;
+
     }
-/* hard skills */
-.skills-hard {
-    background: rgba(255, 251, 0, 0.397);
-    height: 220vh;
-}
-.html,
-.css,
-.sprin,
-.js,
-.msql,
-.git,
-.boostrap {
 
-    left: 85px;
+    /* hard skills */
+    .skills-hard {
 
-}
-.angu, .js{
-    left: 80px;
-}
+        height: 220vh;
+    }
 
-.msql {
+    .html,
+    .css,
+    .sprin,
+    .js,
+    .msql,
+    .git,
+    .boostrap {
 
-    left: 60px;
+        left: 85px;
 
-}
+    }
+
+    .angu,
+    .js {
+        left: 80px;
+    }
+
+    .msql {
+
+        left: 60px;
+
+    }
 
 }
 
@@ -918,8 +1016,9 @@
 
     /* nav lateral */
     .contenedor-navLateral {
-     display: none;
+        display: none;
     }
+
     /* soft skills */
     .skills-soft {
         height: 260vh;
@@ -928,9 +1027,10 @@
 
     /* hard skills */
     .skills-hard {
-        background: rgba(255, 0, 170, 0.377);
+
         height: 240vh;
     }
+
     .html,
     .css,
     .sprin,
@@ -938,15 +1038,17 @@
     .msql,
     .git,
     .boostrap {
-    
-      opacity: 0;
-       
-    
+
+        opacity: 0;
+
+
     }
-    .angu, .js{
+
+    .angu,
+    .js {
         opacity: 0;
     }
-    
+
     .msql {
         opacity: 0;
     }
